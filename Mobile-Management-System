@@ -1,0 +1,33 @@
+# Mobile Management System
+
+class Mobile:
+    def __init__(self, brand, price):
+        # Store mobile details
+        self.brand = brand
+        self.price = price
+
+    def display(self):
+        # Display mobile information
+        print("Brand:", self.brand)
+        print("Price:", self.price)
+
+    def check_price(self):
+        # Check whether the mobile is expensive or affordable
+        if self.price >= 20000:
+            print("Expensive")
+        else:
+            print("Affordable")
+
+    def discount(self):
+        # Apply discount to the mobile price
+        self.price = self.price - 2000
+        print("Discount Applied")
+        print("New Price:", self.price)
+
+
+m1 = Mobile("Samsung", 25000)
+
+m1.display()
+m1.check_price()
+m1.discount()
+m1.display()
